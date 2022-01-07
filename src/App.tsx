@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './components/Header';
 
-function App() {
+import styles from './home.module.scss';
+
+import homeImg from './assets/Illustration.svg';
+import searchImg from './assets/search.svg';
+import { Recipes } from './components/Recipes';
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={styles.appContainer}>
+        <Header />
+        <div className={styles.appContent}>
+          <h1>Ready for Trying a new recipe?</h1>
+          <div>
+            <input type="text" placeholder="Search healthy recipes" />
+            <button>
+              <img src={searchImg} alt="" />
+            </button>
+          </div>
+        </div>
+        <div className={styles.appImg}>
+          <img src={homeImg} alt="Illustration" />
+        </div>
+      </div>
+      <Recipes />
+    </>
   );
 }
-
-export default App;

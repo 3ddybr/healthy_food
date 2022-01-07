@@ -1,0 +1,45 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1366px;
+
+  margin: 2rem auto 1rem;
+
+  // border: 1px solid red;
+
+  .headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    h1{
+      font-size: 3.2rem;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      color: var(--title);
+
+      padding-bottom: 1rem;
+    }
+
+    p{
+      width: 100%;
+      max-width: 51rem;
+
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+
+      font-size: 1.6rem;
+      font-family: Roboto, sans-serif;
+      color: var(--text);
+    }
+
+  }
+
+}
