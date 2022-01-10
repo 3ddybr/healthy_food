@@ -6,6 +6,7 @@ import styles from './home.module.scss';
 import homeImg from './assets/Illustration.svg';
 import searchImg from './assets/search.svg';
 import { Recipes } from './components/Recipes';
+import { Blog } from './components/Blog';
 
 export function App() {
   return (
@@ -26,6 +27,7 @@ export function App() {
         </div>
       </div>
       <Recipes />
+      <Blog />
     </>
   );
 }
