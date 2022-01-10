@@ -31,15 +31,24 @@
       width: 100%;
       max-width: 51rem;
 
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-
       font-size: 1.6rem;
       font-family: Roboto, sans-serif;
       color: var(--text);
+
+      padding-bottom: 2rem;
     }
 
+  }
+
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1090px;
+
+    // border: 1px solid red;
   }
 
 }
