@@ -7,6 +7,8 @@ import homeImg from './assets/Illustration.svg';
 import searchImg from './assets/search.svg';
 import { Recipes } from './components/Recipes';
 import { Blog } from './components/Blog';
+import { ReadBlog } from './components/ReadBlog';
+import { Join } from './components/Join/index.tsx';
 
 export function App() {
   return (
@@ -28,6 +30,17 @@ export function App() {
       </div>
       <Recipes />
       <Blog />
+      <ReadBlog />
+      <Join />
+      <footer>
+        <div className={styles.footerContainer}>
+          <p>© Copyrights 2019 Stack. All Rights Reserved.</p>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
