@@ -46,13 +46,16 @@ a {
   text-decoration: none;
 }
 
-// .container {
-//   display: flex;
-//   justify-content:center;
-//   align-items:center;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1366px;
 
-//   background: black;
-//   width: 100%;
-//   max-width: 1090px;
-//   margin: 0 auto;
-// }
+  background:var(--white);
+
+  margin: 0 auto;
+
+  // border: 1px solid red;
+}

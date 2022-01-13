@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../Button';
+
+// import register from '../Register';
 
 import styles from './styles.module.scss';
 
@@ -22,7 +25,9 @@ export function Header() {
               </li>
             </ul>
           </nav>
-          <Button text="REGISTER" />
+          <Link to="/register">
+            <Button text="REGISTER" />
+          </Link>
         </div>
       </div>
     </div>
