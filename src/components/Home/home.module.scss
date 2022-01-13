@@ -81,8 +81,9 @@
           font-size: 1.6rem;
 
           //nao ta aceitanando o css aqui, transformar color icon branco
-          color: var(--white);
-          fill: var(--white);
+          color: var(--white) currentColor;
+          box-shadow: var(--white) currentColor;
+          // fill: var(--white);
 
         }
       }

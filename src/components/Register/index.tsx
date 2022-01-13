@@ -115,15 +115,15 @@ export function Register() {
 
         <input
           type="text"
-          placeholder="logradouro"
+          placeholder="Logradouro"
           {...register('logradouro')}
         />
         <span>{errors.logradouro && 'Campo obrigatório'}</span>
 
-        <input type="text" placeholder="bairro" {...register('bairro')} />
+        <input type="text" placeholder="Bairro" {...register('bairro')} />
         <span>{errors.bairro && 'Campo obrigatório'}</span>
 
-        <input type="text" placeholder="uf" {...register('uf')} />
+        <input type="text" placeholder="UF" {...register('uf')} />
         <span>{errors.uf && 'Campo obrigatório'}</span>
 
         <button type="submit">Register</button>
