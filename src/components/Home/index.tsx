@@ -19,7 +19,7 @@ export function Home() {
           <div>
             <input type="text" placeholder="Search healthy recipes" />
             <button>
-              <img src={searchImg} alt="" />
+              <img src={searchImg} alt="Buscar" />
             </button>
           </div>
         </div>

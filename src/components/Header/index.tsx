@@ -10,7 +10,9 @@ export function Header() {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>Healthy Food</h1>
+        <Link to="/">
+          <h1>Healthy Food</h1>
+        </Link>
         <div className={styles.navegations}>
           <nav>
             <ul>

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 import styles from './styles.module.scss';
 import { ReadBlogCard } from '../ReadBlogCard';
 
@@ -26,33 +29,50 @@ export function ReadBlog() {
         </p>
       </div>
       <div className={styles.content}>
-        <ReadBlogCard
-          srcImage={readBlogImg1}
-          title="Quick-start guide to nuts and seeds"
-          srcImagePerfil={readBlogPerfilImg1}
-          namePerfil="Kevin Ibrahim"
-        />
-        <ReadBlogCard
-          srcImage={readBlogImg2}
-          title="Nutrition: Tips for
+        <Carousel
+          centerMode
+          centerSlidePercentage={40}
+          autoPlay
+          infiniteLoop
+          width={'1000px'}
+        >
+          <div>
+            <ReadBlogCard
+              srcImage={readBlogImg1}
+              title="Quick-start guide to nuts and seeds"
+              srcImagePerfil={readBlogPerfilImg1}
+              namePerfil="Kevin Ibrahim"
+            />
+          </div>
+          <div>
+            <ReadBlogCard
+              srcImage={readBlogImg2}
+              title="Nutrition: Tips for
           Improving Your Health"
-          srcImagePerfil={readBlogPerfilImg2}
-          namePerfil="Mike Jackson"
-        />
-        <ReadBlogCard
-          srcImage={readBlogImg3}
-          title="The top 10 benefits
+              srcImagePerfil={readBlogPerfilImg2}
+              namePerfil="Mike Jackson"
+            />
+          </div>
+
+          <div>
+            <ReadBlogCard
+              srcImage={readBlogImg3}
+              title="The top 10 benefits
           of eating healthy"
-          srcImagePerfil={readBlogPerfilImg3}
-          namePerfil="Bryan McGregor"
-        />
-        <ReadBlogCard
-          srcImage={readBlogImg4}
-          title="What Makes a
-          Healthy Diet?"
-          srcImagePerfil={readBlogPerfilImg4}
-          namePerfil="Jashua"
-        />
+              srcImagePerfil={readBlogPerfilImg3}
+              namePerfil="Bryan McGregor"
+            />
+          </div>
+
+          <div>
+            <ReadBlogCard
+              srcImage={readBlogImg4}
+              title="What Makes a Healthy Diet?"
+              srcImagePerfil={readBlogPerfilImg4}
+              namePerfil="Jashua"
+            />
+          </div>
+        </Carousel>
       </div>
     </div>
   );

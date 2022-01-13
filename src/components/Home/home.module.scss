@@ -63,7 +63,6 @@
       }
       button{
         background: var(--primary);
-        color: var(--white);
         border: 0;
         width: 5.2rem;
         height: 5.2rem;
@@ -73,11 +72,18 @@
         font-family: Roboto, sans-serif;
         font-weight: bold;
 
+
+        cursor: pointer;
+
         img{
           width:1.6rem;
           height:1.6rem;
           font-size: 1.6rem;
-          border-color: var(--white);
+
+          //nao ta aceitanando o css aqui, transformar color icon branco
+          color: var(--white);
+          fill: var(--white);
+
         }
       }
     }

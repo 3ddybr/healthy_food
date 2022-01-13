@@ -47,7 +47,8 @@ export function Register() {
   useEffect(() => {
     const newUsersStr = JSON.stringify(users);
     localStorage.setItem('users', newUsersStr);
-  }, [users]);
+    cookies.user = newUsersStr;
+  }, [cookies, users]);
 
   const handleFetchAddress = async (cep: string) => {
     if (cep.length === 8) {
