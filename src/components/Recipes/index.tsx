@@ -9,7 +9,7 @@ import comidaImg4 from '../../assets/comida_4.svg';
 
 export function Recipes() {
   return (
-    <div className={styles.container}>
+    <div id="recipes" className={styles.container}>
       <div className={styles.headerContainer}>
         <h1>Our Best Recipes</h1>
         <p>

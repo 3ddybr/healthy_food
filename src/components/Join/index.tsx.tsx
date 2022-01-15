@@ -8,7 +8,7 @@ import { Button } from '../Button';
 export function Join() {
   return (
     <>
-      <div className={styles.joinContainer}>
+      <div id="join" className={styles.joinContainer}>
         <div className={styles.joinContent}>
           <h1>Join our membership to get special offer</h1>
           <div>

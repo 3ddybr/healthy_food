@@ -20,13 +20,13 @@ export function Header() {
           <nav>
             <ul>
               <li>
-                <a>HEALTHY RECIPES</a>
+                <a href="#recipes">HEALTHY RECIPES</a>
               </li>
               <li>
-                <a>BLOG</a>
+                <a href="#readblog">BLOG</a>
               </li>
               <li>
-                <a>JOIN</a>
+                <a href="#join">JOIN</a>
               </li>
             </ul>
             <Link to="/register">

@@ -20,7 +20,7 @@ import readBlogPerfilImg4 from '../../assets/jashua.svg';
 
 export function ReadBlog() {
   return (
-    <div className={styles.container}>
+    <div id="readblog" className={styles.container}>
       <div className={styles.headerContainer}>
         <h1>Read Our Blog</h1>
         <p>

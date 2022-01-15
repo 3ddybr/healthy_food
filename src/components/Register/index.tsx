@@ -85,6 +85,7 @@ export function Register() {
     };
     setCookie('user', user);
     setUsers(prevUsers => [...prevUsers, user]);
+    alert('Usuário cadastrado com sucesso!');
   };
 
   return (
@@ -107,7 +108,7 @@ export function Register() {
 
         <input
           type="text"
-          placeholder="Cep"
+          placeholder="Cep (apenas números)"
           {...register('cep')}
           onChange={event => onChangeCep(event.target.value)}
         />
