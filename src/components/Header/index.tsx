@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 
-// import register from '../Register';
-
 import styles from './styles.module.scss';
 
 export function Header() {
@@ -13,7 +11,12 @@ export function Header() {
         <Link to="/">
           <h1>Healthy Food</h1>
         </Link>
-        <div className={styles.navegations}>
+        {/* <div className={styles.mobileMenu}>
+          <div className={styles.line1}></div>
+          <div className={styles.line2}></div>
+          <div className={styles.line3}></div>
+        </div> */}
+        <div className={styles.navList}>
           <nav>
             <ul>
               <li>
@@ -26,10 +29,10 @@ export function Header() {
                 <a>JOIN</a>
               </li>
             </ul>
+            <Link to="/register">
+              <Button text="REGISTER" />
+            </Link>
           </nav>
-          <Link to="/register">
-            <Button text="REGISTER" />
-          </Link>
         </div>
       </div>
     </div>

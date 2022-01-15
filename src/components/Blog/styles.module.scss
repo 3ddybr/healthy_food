@@ -9,19 +9,14 @@
 
   margin: 0 auto;
 
-  // border: 1px solid red;
-
   .blogImg{
     width:100%;
     max-width: 71.8rem;
     height: auto;
-  // border: 1px solid red;
-
 
     img{
       width: 100%;
       height: auto;
-      // border: 1px solid red;
     }
   }
 
@@ -30,7 +25,6 @@
     max-width: 41.2rem;
     padding-right: 2rem;
 
-    // border: 1px solid red;
     h2{
       display: flex;
       align-items: center;
@@ -54,5 +48,4 @@
       padding-bottom: 3rem;
     }
   }
-
 }

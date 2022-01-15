@@ -4,7 +4,6 @@ import styles from './styles.module.scss';
 
 import servicesImg from '../../assets/bloco_services.svg';
 import { Button } from '../Button';
-// import searchImg from '../assets/search.svg';
 
 export function Blog() {
   return (

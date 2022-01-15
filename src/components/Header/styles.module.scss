@@ -9,7 +9,6 @@
 
   position: absolute;
   top: 0;
-  // border: 1px solid blue;
 
   .wrapper{
     display:flex;
@@ -18,23 +17,20 @@
     width:100%;
     max-width:1090px;
 
-    // border: 1px solid red;
-
-
     h1{
         color: var(--primary);
         font-size:3.2rem;
         font-family: Montserrat;
         font-weight: bold;
       }
-      .navegations{
+
+      .navList{
         display:flex;
         justify-content:space-between;
         align-items:center;
         width:100vw;
         max-width: 45.5rem;
 
-        // border: 1px solid red;
         nav{
           display: flex;
           align-items: center;

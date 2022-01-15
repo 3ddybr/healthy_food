@@ -9,8 +9,6 @@
 
   margin: 0 auto;
 
-  // border: 1px solid red;
-
   .joinImg{
     width:100%;
     max-width: 71.8rem;
@@ -32,7 +30,6 @@
 
     height: 28.4rem;
 
-    // border: 1px solid red;
     h1{
       font-size: 3.2rem;
       font-family: Montserrat, sans-serif;
@@ -46,8 +43,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
-      // width: 45.4rem;
 
       input{
         width: 34.2rem;
@@ -84,13 +79,4 @@
     }
   }
 }
-
-// @media (max-width:1366px) {
-//   .appContainer{
-//     .appContent{
-//       position: relative;
-//       left: 130px;
-//     }
-//   }
-// }
 
