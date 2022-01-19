@@ -48,3 +48,11 @@
     max-width: 1090px;
   }
 }
+
+@media (max-width:800px) {
+  .container{
+    .content{
+      margin-bottom:1rem ;
+    }
+  }
+}

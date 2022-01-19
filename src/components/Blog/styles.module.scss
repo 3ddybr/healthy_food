@@ -49,3 +49,12 @@
     }
   }
 }
+
+@media (max-width:1366px) {
+  .appContainer{
+    .appContent{
+      position: relative;
+      left: 130px;
+    }
+  }
+}

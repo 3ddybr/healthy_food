@@ -13,3 +13,12 @@
     cursor: pointer;
   }
 }
+
+@media (max-width:800px) {
+  .container{
+    button{
+      width: 10rem;
+      height: 3.2rem;
+    }
+  }
+}
