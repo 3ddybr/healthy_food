@@ -50,3 +50,19 @@
     }
   }
 }
+
+@media(max-width: 768px){
+  .readBlogCardContainer{
+    width: 70.3vw;
+    // max-width: 30rem;
+    max-height: 40rem;
+
+    // .readBlogCardContent{
+    //   h2{
+    //     font-size: 1.2rem;
+
+    //     border: 1px solid red;
+      // }
+    // }
+  }
+}

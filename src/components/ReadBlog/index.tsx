@@ -34,7 +34,7 @@ export function ReadBlog() {
           centerSlidePercentage={40}
           autoPlay
           infiniteLoop
-          width={'1000px'}
+          width={'100%'}
         >
           <div>
             <ReadBlogCard

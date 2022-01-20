@@ -80,3 +80,63 @@
   }
 }
 
+@media(max-width:780px) {
+  .joinContainer{
+    // border: 1px solid red;
+
+    .joinContent{
+      max-width: 45vw;
+      // border: 1px solid red;
+      h1{
+        text-align: center;
+        width: 100%;
+        font-size: 2.4rem;
+        padding-bottom: 1.5rem;
+      }
+      div{
+        input{
+          width: 15.4rem;
+        }
+        button{
+          width: 5.3rem;
+          height: 4.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:599px){
+  .joinImg{
+    display:none;
+  }
+  .joinContainer{
+    .joinContent{
+      max-width: 100vw;
+      div{
+        input{
+          width: 24.2rem;
+          height: 5.2rem;
+        }
+        button{
+          width: 9.3rem;
+          height: 5.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:411px){
+  .joinContainer{
+    .joinContent{
+      max-width: 100vw;
+      div{
+        input{
+          width: 15.2rem;
+          height: 5.2rem;
+        }
+      }
+    }
+  }
+}

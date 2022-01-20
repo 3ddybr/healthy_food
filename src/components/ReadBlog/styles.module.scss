@@ -8,7 +8,7 @@
 
   margin: 2rem auto 1rem;
 
-  padding-bottom: 8rem;
+  padding-bottom: 2rem;
 
   .headerContainer{
     display: flex;
@@ -43,9 +43,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 2rem;
+    // width: 100vw;
     max-width: 1090px;
+    flex-wrap: wrap;
+    border: 1px solid red;
+
+
+    .carousel-root{
+      border: 1px solid red !important;
+    }
+  }
+}
+
+@media(max-width:768px){
+  .content{
+    .carousel-root{
+      .carousel.carousel-slider{
+        border: 1px solid red;
+        width: 500px;
+      }
+
+    }
+
   }
 }
 
