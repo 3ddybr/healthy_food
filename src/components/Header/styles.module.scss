@@ -1,4 +1,4 @@
-.container{
+.headerContainer{
   display:flex;
   justify-content:center;
   align-items:center;
@@ -30,6 +30,10 @@
         align-items:center;
         width:100vw;
         max-width: 45.5rem;
+
+        .MobileNavigation{
+          display:none;
+        }
 
         nav{
           display: flex;
@@ -70,9 +74,53 @@
 }
 
   @media (max-width:1090px) {
-    .container{
+    .headerContainer{
       .wrapper{
         padding: 0 1rem;
+      }
+    }
+  }
+
+  @media (max-width:880px){
+    .headerContainer{
+      position: absolute;
+      z-index: 1;
+      .wrapper{
+        .navList{
+          position: absolute;
+          top: 0;
+          right: 3%;
+
+          max-width: 95%;
+          .Navigation{
+            display:none;
+          }
+          .MobileNavigation{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+
+            background: linear-gradient(185deg,rgba(64, 134, 79, 0.747) 0% ,rgba(186,220,88,1) 90% );
+
+            ul{
+              flex-direction: column;
+
+              li{
+                margin: 1.6rem;
+              }
+            }
+
+            button{
+              margin: 1.6rem;
+            }
+
+            .Hamburger{
+              position: absolute;
+              right: 3%;
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }

@@ -71,7 +71,8 @@ export function Register() {
     logradouro,
     bairro,
     uf,
-  }: any) => {
+  }: // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  any) => {
     const user: User = {
       nome,
       birthDate,

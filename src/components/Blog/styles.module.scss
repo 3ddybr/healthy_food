@@ -4,6 +4,7 @@
   justify-content: flex-start;
   width: 100%;
   max-width: 1366px;
+  padding-bottom: 3rem;
 
   background:var(--white);
 
@@ -52,6 +53,7 @@
 
 @media (max-width:780px) {
   .blogContainer{
+    justify-content:center;
     .blogContent{
       h2{
         font-size: 2.4rem;
