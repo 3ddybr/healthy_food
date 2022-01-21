@@ -31,10 +31,11 @@ export function ReadBlog() {
       <div className={styles.content}>
         <Carousel
           centerMode
-          centerSlidePercentage={40}
+          centerSlidePercentage={50}
           autoPlay
           infiniteLoop
-          width={'100%'}
+          width={'50%'}
+          showThumbs={false}
         >
           <div>
             <ReadBlogCard
