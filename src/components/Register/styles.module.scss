@@ -62,8 +62,21 @@
   }
 }
 
+@media (max-width: 890px){
+  .contentForm{
+    width: 100%;
+    padding: 4rem;
+  }
+}
+
 @media(max-width: 430px){
   .contentForm{
-    justify-content: center;
+    h2{
+      font-size: 2rem;
+    }
+
+    input{
+      font-size: 1.8rem;
+    }
   }
 }
