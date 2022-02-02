@@ -22,17 +22,17 @@ interface User {
   endereco: Address;
 }
 
-const schema = yup.object().shape({
-  nome: yup.string().required(),
-  birthDate: yup.string().required(),
-  cpf: yup.string().required(),
-  cep: yup.string().required(),
-  logradouro: yup.string().required(),
-  bairro: yup.string().required(),
-  uf: yup.string().required(),
-});
-
 export function Register() {
+  const schema = yup.object().shape({
+    nome: yup.string().required(),
+    birthDate: yup.string().required(),
+    cpf: yup.string().max(14).required(),
+    cep: yup.string().max(8).required(),
+    logradouro: yup.string().required(),
+    bairro: yup.string().required(),
+    uf: yup.string().required(),
+  });
+
   const [users, setUsers] = useState<User[]>([]);
   const [cookies, setCookie] = useCookies(['user']);
   const {
@@ -106,6 +106,8 @@ export function Register() {
 
         <input type="text" placeholder="Cpf" {...register('cpf')} />
         <span>{errors.cpf && 'Campo obrigatório'}</span>
+        <span>{errors.cpf?.type && 'Tipo invalido apenas 11 números'}</span>
+        <span>{errors.cpf?.message}</span>
 
         <input
           type="text"
@@ -114,6 +116,7 @@ export function Register() {
           onChange={event => onChangeCep(event.target.value)}
         />
         <span>{errors.cep && 'Campo obrigatório'}</span>
+        <span>{errors.cep?.type && 'Tipo invalido apenas 8 números'}</span>
 
         <input
           type="text"
